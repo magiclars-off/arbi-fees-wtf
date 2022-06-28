@@ -1,0 +1,6 @@
+export const ARBITRUM = 42161;
+export const ARBITRUM_RINKEBY = 421611;
+
+export const ARBISCAN_KEY = '7TBAGTD7BKWJYF49V5MK4G36EZGHF8BUXU';
+export const ALCHEMY_ID = 'gfCKQfKgwpvt08ZMAhkxxXxNI-Z6xRhU';
+export const INFURA_ID = '9aa3d95b3bc440fa88ea12eaa4456161';
