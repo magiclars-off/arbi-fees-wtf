@@ -50,7 +50,7 @@ const Home: NextPage = () => {
         {` on gas. Right now, that's`}{' '}
         <span className="highlight">
           {totals.totalEth.gt(constants.Zero)
-            ? `$${Number(formatPrice(totals.totalEth.mul(Math.round(+ethPrice * 100)).div(100))).toFixed(2)}`
+            ? `$${formatPrice(BigNumber.from(totals.totalEth).mul(Math.round(+ethPrice * 100)).div(100).toString())}`
             : '$0'}
         </span>
         .
