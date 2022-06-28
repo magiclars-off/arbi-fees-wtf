@@ -21,4 +21,5 @@ export const abbreviatePrice = (number: number | string, decimals?: number) => {
 };
 
 export const formatNumber = (number: number) => new Intl.NumberFormat().format(number);
-export const formatPrice = (price: BigNumberish) => formatNumber(parseFloat(formatEther(price ?? constants.Zero)));
+// @ts-ignore
+export const formatPrice = (price: BigNumberish) => formatNumber(Number(parseFloat(formatEther(price ?? constants.Zero))).toFixed(2));
