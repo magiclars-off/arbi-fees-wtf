@@ -1,0 +1,9 @@
+# *
+User-agent: *
+Allow: /
+
+# Host
+Host: https://arbi-fees.wtf
+
+# Sitemaps
+Sitemap: https://arbi-fees.wtf/sitemap.xml
