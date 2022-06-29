@@ -25,7 +25,7 @@ const Home: NextPage = () => {
   const totals = useMemo(() => {
     return txs.reduce(
       (acc, tx: Tx) => ({
-        failed: tx.isError === '1' ? acc.failed++ : acc.failed,
+        failed: tx.isError === '1' ? acc.failed += 1 : acc.failed,
         failedGas: tx.isError === '1' ? acc.failedGas.add(BigNumber.from(tx.gasUsed).mul(tx.gasPrice)) : acc.failedGas,
         totalGas: acc.totalGas.add(tx.gasUsed),
         totalEth: acc.totalEth.add(BigNumber.from(tx.gasUsed).mul(tx.gasPrice)),
